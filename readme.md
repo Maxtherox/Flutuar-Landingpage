@@ -1,3 +1,5 @@
 # Landing page modelo do site "Flutuar"
 
 Esta landing page foi desenvolvida durante o curso de desenvolvimento "Explorer" da plataforma [[Explorer - Aprenda programação do zero e conquiste sua primeira vaga](https://www.rocketseat.com.br/explorer)](RocketSeat)
+
+
