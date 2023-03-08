@@ -1,0 +1,250 @@
+body {
+    margin: 64px auto 240px ;
+    height: 758px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.page {
+    width: 626;
+    margin: 0 auto;
+
+}
+
+main {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 626px;
+    text-align: center;
+    line-height: 22px;
+    
+}
+
+section p {
+    color: #828282;
+    font-size: 15px;
+    line-height: 22px;
+    font-style: normal;
+    width: 540px;
+
+}
+
+section p span {
+    color: #3F3D56;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+    color: #3F3D56;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+
+}
+
+span {
+    color: #EE24FF;
+    
+}
+
+.line {
+    width: 391px;
+    border: 1px solid #ECEFF2;
+    margin: 64px auto 16px;
+
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
+    margin-bottom: 42px;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #3F3D56;
+    font-weight: 700;
+    font-size: 15px;
+    
+    text-align: center;
+}
+
+ footer ul li a:hover{
+    cursor: pointer;
+    scale: 1110px;
+    font-weight: 700;
+    color: #EE24FF;
+   
+ }
+
+#wave {
+    
+    position: fixed;
+    width: 100vw;
+    margin-bottom: 0px;
+    bottom: 0;
+}
+
+.wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.ibb.co/wQZVxxk/wave.png");
+    background-size: 1000px 100px;
+  }
+  
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+  }
+  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }
+  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+  }
+  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+
+
+  /* animations */
+
+.womanImage {
+    animation: fromTop .9 1s backwards;
+   
+}
+
+main section {
+    animation: fromBottom .9 1s backwards;
+    
+}
+
+.animation1 {  
+    animation: fromLeft .9 .9s backwards;
+}
+.animation2 {  
+    animation: fromRight .9 2s backwards;
+    
+}
+
+.animation3 {  
+    animation: fromLeft .9 2.5s backwards;
+}
+
+footer {
+    animation: fromBottom .9 1s backwards;
+}
+
+
+@keyframes fromTop {
+    from {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+        
+    to {
+       opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+        
+    to {
+       opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+@keyframes fromLeft {
+     from {
+        opacity: 0;
+        transform:  translateX(30px);
+     }
+
+     to {
+        opacity: 1;
+        transform: translateX(0);
+     }
+}
+
+@keyframes fromRight {
+    from{
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
